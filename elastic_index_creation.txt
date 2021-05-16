@@ -1,0 +1,18 @@
+DELETE /cdr*
+
+PUT /cdrs
+{
+  "mappings": {
+    "properties": {
+        "RECORD_ID":   { "type": "text"  },
+        "CALLING_MSISDN":   { "type": "text"  },
+        "CALLED_MSISDN":   { "type": "text"  },
+        "START_TIME":   { "type": "date"  },
+        "END_TIME":   { "type": "date"  },
+        "DURATION":   { "type": "integer"  },
+        "CALL_TYPE":   { "type": "text"  },
+        "CHARGING_TYPE":   { "type": "integer"  },
+        "CHARGE":   { "type": "float"  },
+        "CALL_RESULT":   { "type": "text"  }
+    }
+  }
